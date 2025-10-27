@@ -3,72 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esporte Total - Notícias e Fofocas do Futebol</title>
+  <title>Esporte Total - Notícias, Jogos e Fofocas do Futebol</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>⚽ Esporte Total</h1>
-    <p>As últimas notícias, resultados e fofocas do mundo do futebol!</p>
+    <p>O portal mais completo sobre futebol, bastidores e fofocas do esporte!</p>
   </header>
 
   <nav>
     <ul>
       <li><a href="#noticias">Notícias</a></li>
-      <li><a href="#jogos">Próximos Jogos</a></li>
+      <li><a href="#jogos">Jogos</a></li>
       <li><a href="#fofocas">Fofocas</a></li>
-      <li><a href="#copas">Copas do Mundo</a></li>
+      <li><a href="#copas">Copas</a></li>
+      <li><a href="#internacional">Futebol Internacional</a></li>
     </ul>
   </nav>
 
   <main>
+    <!-- Seção de Notícias -->
     <section id="noticias" class="container">
-      <h2>Últimas Notícias</h2>
-      <div class="card">
-        <h3>🔥 Palmeiras vence clássico e assume liderança!</h3>
-        <p>Com um golaço de Endrick, o Verdão bateu o Corinthians e disparou no Brasileirão.</p>
-      </div>
+      <h2>📰 Últimas Notícias</h2>
 
-      <div class="card">
-        <h3>💥 Messi brilha novamente na MLS</h3>
-        <p>O craque argentino marcou dois gols e deu uma assistência pelo Inter Miami. O homem não para!</p>
-      </div>
+      <article class="card destaque">
+        <img src="https://s2-ge.glbimg.com/S6QmhP_lKPyOykFz0MxvJZxUZXI=/0x0:1200x800/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2023/05/29/palmeiras-time.jpg" alt="Palmeiras em campo">
+        <div>
+          <h3>Palmeiras dispara na liderança do Brasileirão!</h3>
+          <p>O Verdão venceu o Corinthians com gol de Endrick e segue firme na briga pelo título. Abel Ferreira elogiou o elenco e prometeu mais intensidade na reta final.</p>
+          <a href="https://ge.globo.com/futebol/times/palmeiras/" target="_blank">Leia mais no GE →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Messi comanda o Inter Miami e marca de novo!</h3>
+        <p>O craque argentino segue imparável na MLS, marcando dois gols e uma assistência na última rodada.</p>
+        <a href="https://ge.globo.com/futebol/futebol-internacional/noticia/messi-inter-miami.ghtml" target="_blank">Saiba mais</a>
+      </article>
+
+      <article class="card">
+        <h3>Flamengo prepara reformulação no elenco para 2026</h3>
+        <p>Dirigentes estudam saída de alguns medalhões e possíveis reforços para o próximo Brasileirão.</p>
+        <a href="https://ge.globo.com/futebol/times/flamengo/" target="_blank">Mais detalhes no GE</a>
+      </article>
     </section>
 
+    <!-- Seção de Jogos -->
     <section id="jogos" class="container">
       <h2>📅 Próximos Jogos e Transmissões</h2>
       <ul id="lista-jogos"></ul>
     </section>
 
+    <!-- Fofocas -->
     <section id="fofocas" class="container">
       <h2>🗣️ Fofocas do Mundo da Bola</h2>
-      <div class="card">
-        <h3>💘 Neymar e Bruna Biancardi novamente juntos?</h3>
-        <p>Fontes próximas afirmam que o casal foi visto em Paris durante o fim de semana.</p>
-      </div>
 
-      <div class="card">
-        <h3>💰 Mbappé irrita o Real Madrid</h3>
-        <p>Após renovar com o PSG, o francês teria exigido cláusulas milionárias caso decida mudar de time.</p>
-      </div>
+      <article class="card">
+        <h3>💔 Neymar e Bruna Biancardi: vai e vem continua!</h3>
+        <p>O casal foi visto junto novamente em um evento em Paris. Será reconciliação definitiva?</p>
+        <a href="https://extra.globo.com/famosos/" target="_blank">Fonte: Extra</a>
+      </article>
+
+      <article class="card">
+        <h3>💸 Cristiano Ronaldo compra ilha em Portugal</h3>
+        <p>O astro português estaria planejando construir uma mansão luxuosa para a família em uma ilha privada.</p>
+        <a href="https://g1.globo.com/pop-arte/" target="_blank">Leia no G1</a>
+      </article>
+
+      <article class="card">
+        <h3>🔥 Mbappé irrita o Real Madrid novamente</h3>
+        <p>O francês teria feito novas exigências para assinar com o clube espanhol — e Florentino Pérez não gostou nada disso.</p>
+        <a href="https://www.espn.com.br/futebol/" target="_blank">Leia na ESPN</a>
+      </article>
     </section>
 
+    <!-- Copas do Mundo -->
     <section id="copas" class="container">
-      <h2>🏆 Últimas Copas do Mundo</h2>
-      <div class="card">
-        <h3>🇶🇦 Copa do Mundo 2022</h3>
-        <p>Argentina campeã! Messi brilhou, e a final contra a França entrou para a história.</p>
-      </div>
+      <h2>🏆 Memórias das Copas</h2>
 
-      <div class="card">
-        <h3>🇷🇺 Copa do Mundo 2018</h3>
-        <p>França levantou a taça com Mbappé e Griezmann em grande fase. O Brasil parou nas quartas.</p>
-      </div>
+      <article class="card">
+        <h3>🇶🇦 Copa do Mundo 2022 - A era de Messi</h3>
+        <p>Argentina campeã após uma final eletrizante contra a França. Messi finalmente ergueu o troféu mais desejado.</p>
+        <a href="https://ge.globo.com/futebol/copa-do-mundo/" target="_blank">Relembre os jogos</a>
+      </article>
+
+      <article class="card">
+        <h3>🇷🇺 Copa do Mundo 2018 - A glória da França</h3>
+        <p>Com Mbappé brilhando, a França conquistou o bicampeonato mundial. O Brasil parou nas quartas contra a Bélgica.</p>
+        <a href="https://www.uol.com.br/esporte/futebol/copa-do-mundo/" target="_blank">Veja tudo sobre 2018</a>
+      </article>
+    </section>
+
+    <!-- Internacional -->
+    <section id="internacional" class="container">
+      <h2>🌍 Futebol Internacional</h2>
+
+      <article class="card">
+        <h3>🇪🇸 Real Madrid x Barcelona: o clássico vem aí!</h3>
+        <p>O El Clásico está marcado para 2 de novembro, e promete ser um dos mais equilibrados dos últimos anos.</p>
+        <a href="https://www.espn.com.br/futebol/time/_/id/86/barcelona" target="_blank">Confira na ESPN</a>
+      </article>
+
+      <article class="card">
+        <h3>🇬🇧 Manchester City mira nova estrela brasileira</h3>
+        <p>Segundo jornais ingleses, o clube estaria de olho em Endrick e outros jovens talentos do Brasil.</p>
+        <a href="https://ge.globo.com/futebol/futebol-internacional/" target="_blank">Mais informações</a>
+      </article>
     </section>
   </main>
 
   <footer>
-    <p>Site desenvolvido por <strong>@ieecaetanhorocha</strong> 💙 | Siga no Instagram!</p>
+    <p>Site desenvolvido por <strong>@ieecaetanhorocha</strong> 💙 | Siga no Instagram para mais atualizações esportivas!</p>
   </footer>
 
   <script src="script.js"></script>
